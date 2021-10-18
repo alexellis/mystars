@@ -1,6 +1,6 @@
 # mystars
 
-A Go function that tells you about stars on projects you maintain.
+A Go function that sends GitHub Stars to Slack
 
 Works on:
 * repositories
