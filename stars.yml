@@ -1,0 +1,14 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  stars:
+    lang: golang-middleware
+    handler: ./mystars
+    image: alexellis2/my-stars:0.1.5
+    secrets:
+    - slack-stars-webhook-url
+    - slack-stars-hmac-secret
+    build_args:
+      GO111MODULE: on
