@@ -4,6 +4,10 @@ This is a function written in Go that sends GitHub Star and Fork events to a Sla
 
 You'll be able to monitor which of your projects are popular and guess when a new Pull Request may be on its way by watching the events on Slack.
 
+![Star and Fork events coming in live](https://pbs.twimg.com/media/FB_WAhFXEAMsstp?format=jpg&name=medium)
+
+> Star and Fork events coming in live from my repos, the inlets and openfaas organisations on GitHub.
+
 It'll work on multiple:
 
 * repositories
