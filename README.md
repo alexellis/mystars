@@ -1,8 +1,11 @@
-# mystars
+# stargazers
 
-A Go function that sends GitHub Stars to Slack
+This is a function written in Go that sends GitHub Star and Fork events to a Slack channel.
 
-Works on:
+You'll be able to monitor which of your projects are popular and guess when a new Pull Request may be on its way by watching the events on Slack.
+
+It'll work on multiple:
+
 * repositories
 * organisations
 
@@ -22,6 +25,12 @@ faas-cli secret create slack-stars-hmac-secret \
 
 Then deploy the function and set up a webhook for the "Watch" (Star) and "Fork" event using your public URL for OpenFaaS.
 
+## Further resources
+
 If you are running this on your Raspberry Pi or home server, use [inlets](https://inlets.dev) to get a public URL.
 
 [faasd](https://github.com/openfaas/faasd) is a cheap and efficent way to run openfaas on a public cloud VM.
+
+Learn Go with: ["Everyday Go" is the fast way to learn tools, techniques and patterns from real tools used in production.](https://openfaas.gumroad.com/l/everyday-golang) 
+
+Learn to build similar functions using OpenFaaS and faasd: [Serverless for Everyone Else](https://gumroad.com/l/serverless-for-everyone-else)
